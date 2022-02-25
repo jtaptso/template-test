@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            display: block;
+        }
+        
+        img{
+            width: 300px;
+        }
+        .itemcodebox {
+            width: 582px;
+            text-align: center;
+        }
+        .heading-block{
+            width: 300px;
+            display: inline-block;
+        }
+        .icon{
+            height: 20px;
+            width: 90px;
+            padding: 18px 14px 18px 16px;
+        }
+        .parent1{
+            color: rgb(32, 33, 36);
+            display: flex;
+            flex-direction: column;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 189.333px;
+            width: 1263.33px;
+        }
+        .menu-bar{
+            align-items: center;
+            box-sizing: border-box;
+            color: rgb(32, 33, 36);
+            display: flex;
+            flex-shrink: 0;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 60px;
+            padding-bottom: 6px;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 6px;
+            width: 1263.33px;
+        }
+        .login-block{
+            color: rgb(32, 33, 36);
+            display: block;
+            flex-grow: 1;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 48px;
+            width: 1131.27px;
+        }
+        .logo{
+            color: rgb(32, 33, 36);
+            cursor: pointer;
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 16px;
+            margin-bottom: 0px;
+            margin-left: 15px;
+            margin-right: 5px;
+            margin-top: 0px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            text-decoration-color: rgb(32, 33, 36);
+            text-decoration-line: none;
+            text-decoration-style: solid;
+            text-decoration-thickness: auto;
+            width: 36.5938px;
+        }
+        .welcome-message{
+            color: rgb(0, 0, 0);
+            display: block;
+            font-family: Roboto, RobotoDraft, Arial, sans-serif;
+            font-size: 13px;
+            font-stretch: 100%;
+            font-style: normal;
+            font-variant-caps: normal;
+            font-variant-east-asian: normal;
+            font-variant-ligatures: normal;
+            font-variant-numeric: normal;
+            font-weight: 400;
+            height: 48px;
+            line-height: 27px;
+            min-width: 0px;
+            position: relative;
+            transition-delay: 0s;
+            transition-duration: 0.25s;
+            transition-property: box-shadow;
+            transition-timing-function: ease;
+            width: 1131.27px;
+            z-index: 986;
+        }
+        .message{
+            align-items: center;
+            box-sizing: border-box;
+            color: rgb(0, 0, 0);
+            display: flex;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            float: right;
+            font-family: Roboto, RobotoDraft, Arial, sans-serif;
+            font-size: 13px;
+            font-stretch: 100%;
+            font-style: normal;
+            font-variant-caps: normal;
+            font-variant-east-asian: normal;
+            font-variant-ligatures: normal;
+            font-variant-numeric: normal;
+            font-weight: 400;
+            height: 48px;
+            justify-content: flex-end;
+            line-height: normal;
+            padding-bottom: 0px;
+            padding-left: 32px;
+            padding-right: 4px;
+            padding-top: 0px;
+            user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 253.583px;
+            -webkit-box-align: center;
+            -webkit-box-pack: start;
+        }
+        .scan-img{
+            align-items: center;
+            box-sizing: border-box;
+            color: rgb(32, 33, 36);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 92px;
+            max-height: 290px;
+            min-height: 92px;
+            width: 1263.33px;
+        }
+        .itemtxtbox{
+            box-sizing: border-box;
+            color: rgb(32, 33, 36);
+            display: block;
+            flex-shrink: 0;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 160px;
+            max-height: 160px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            width: 1263.33px;
+        }
+        .first{
+            color: rgb(32, 33, 36);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 140px;
+            margin-top: 0px;
+            width: 1223.33px;
+        }
+        .firstfirst{
+            color: rgb(32, 33, 36);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 140px;
+            width: 1223.33px;
+        }
+        .firstfirstfirst{
+            color: rgb(32, 33, 36);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 134px;
+            margin-bottom: 0px;
+            margin-left: 319.667px;
+            margin-right: 319.667px;
+            margin-top: 0px;
+            max-width: 584px;
+            padding-top: 6px;
+            position: relative;
+            width: 584px;
+        }
+        .tboxitem{
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgb(255, 255, 255);
+            background-image: none;
+            background-origin: padding-box;
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-size: auto;
+            border-bottom-color: rgb(223, 225, 229);
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-image-outset: 0;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-left-color: rgb(223, 225, 229);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right-color: rgb(223, 225, 229);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-top-color: rgb(223, 225, 229);
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            border-top-style: solid;
+            border-top-width: 1px;
+            box-shadow: none;
+            color: rgb(32, 33, 36);
+            display: flex;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 44px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            max-width: 584px;
+            width: 582px;
+            z-index: 3;
+                    }
+        .lagerbastand{
+            color: rgb(32, 33, 36);
+            display: block;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 70px;
+            padding-top: 18px;
+            width: 584px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent1">
+        <div class="menu-bar">
+            <div class="logo">Logo</div>
+            <div class="login-block">
+                <div class="welcome-message">
+                    <div class="message">Welcome to test server</div>
+                </div>
+            </div>
+        </div>
+        <div class="scan-img">
+            <img  src="scanBarcode.jpg">
+        </div>
+        <div class="item-txtbox">
+            <div class="first">
+                <div class="firstfirst">
+                    <div class="firstfirstfirst">
+                        <div class="tboxitem">
+                            <input class="itemcodebox" autofocus type="text" placeholder="Scan the item to get the stock">
+                        </div>
+                        <div class="lagerbestand">
+                            teble must come here
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <img class="barcode" src="scanBarcode.jpg">
+    <p>
+        Scan the item to get the stock
+    </p>
+    <input class="itemcodebox" type="text" placeholder="itemcode"> -->
+    <!-- <div class="icon">
+        PSG Germany Icon
+    </div>
+    <div class="void"></div>
+    <div class="heading-block">
+        <img class="barcode" src="scanBarcode.jpg">
+        <input class="itemcodebox" autofocus type="text" placeholder="Scan the item to get the stock">
+    </div> -->
+</body>
+</html>

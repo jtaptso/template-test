@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PSG Germany Web Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lagerbestand.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="logo">PSG Germany</div>
+        <div class="welcome-msg" id="welcomeMsg">Test Server!</div>
+    </div>
+    <div class="lagerbestand-body">
+        <div class="scan-image">
+            <img class="scanBarcode-image" src="scanBarcode.jpg" alt="barcode">
+            <!-- <div class="itemcode-txtbox">
+                <input class="itemtxtbox" id="itemcode" type="text" placeholder="scan item to get itemcode" autofocus>
+            </div> -->
+            <div class="itemcode-txtarea">
+                <textarea class="itemtxtarea" id="txtAreaitemcode" type="text" placeholder="scan item to get itemcode" autofocus></textarea>
+                <button id="button">Get Lagerbestand</button>
+            </div>
+        </div>
+        <!-- <div class="itemcode-txtbox">
+            <input class="itemtxtbox" type="text" placeholder="scan item to get itemcode" autofocus>
+        </div> -->
+        <div class="lagerbestand-table" id="table">
+            
+        </div>
+    </div>
+    <script src="lagerbestand.js"></script>
+</body>
+</html>
